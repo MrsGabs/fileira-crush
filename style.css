@@ -1,0 +1,37 @@
+.board {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background: url('imgs/background.jpg');
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.game-board {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: lightblue;
+    cursor: pointer;
+    border: 2px solid;
+    background-size: 100% 100%;
+}
+
+.cell:hover{
+    transition: 0.3s;  
+    transform: scale(1.05);
+}
+  
