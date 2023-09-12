@@ -4,7 +4,7 @@ const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
 const gameBoard = document.getElementById('game-board');
 gameBoard.style.gridTemplateColumns = `repeat(${numCols},100px)`
 let cells = []
-let imgs = ['/imgs/arvore.jpg', '/imgs/davi.jpg', '/imgs/gabarito.jpg', '/imgs/geraldo.jpg', '/imgs/giaco.jpg', '/imgs/sopa.jpg', '/imgs/tept.jpg', '/imgs/tigas.jpg']
+let imgs = ['./imgs/arvore.jpg', './imgs/davi.jpg', './imgs/gabarito.jpg', './imgs/geraldo.jpg', './imgs/giaco.jpg', './imgs/sopa.jpg', './imgs/tept.jpg', './imgs/tigas.jpg']
 
 
 for (let row = 1; row <= numRows; row++) {
