@@ -1,14 +1,17 @@
 .board {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 body{
-    background: url('imgs/background.jpg');
+    background: url('imgs/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 h1{
-    text-align: center;
     color: aliceblue;
 }
 
@@ -18,20 +21,29 @@ h1{
   }
   
   .cell {
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     background-color: lightblue;
     cursor: pointer;
     border: 2px solid;
-    background-size: 100% 100%;
 }
 
 .cell:hover{
     transition: 0.3s;  
     transform: scale(1.05);
+}
+
+.content{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
 }
   
