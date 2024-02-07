@@ -207,7 +207,6 @@ function checkValid() {
             }
         }
     }
-    return false
 }
 
 function slideCell() {
@@ -221,7 +220,7 @@ function slideCell() {
             }
         }
         for (let r = index; r >= 0; r--) {
-                cells[r * columns + c].src = "./imgs/vazio-roxo.jpg";
+            cells[r * columns + c].src = "./imgs/vazio-roxo.jpg";
         }
     }
 }
@@ -233,6 +232,23 @@ function generateCell() {
         }
     }
 }
+
+let shuffleCount = 0
+
+function shuffleCells() {
+    if (shuffleCount < 3) {
+        for (let i = cells.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [cells[i].src, cells[j].src] = [cells[j].src, cells[i].src];
+        }
+    }
+    shuffleCount++
+    if (shuffleCount === 3) {
+        document.getElementById('shuffle-button').disabled = true;
+    }
+
+}
+
 
 //cells é uma matriz unidimensional por isso a forma correta de acessar a celula é
 //cells[linha * colunas + coluna]
